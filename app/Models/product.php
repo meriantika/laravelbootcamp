@@ -14,7 +14,8 @@ class Product extends Model
         'name',
         'description',
         'stock',
-        'image'
+        'image',
+        'harga'
     ];
 
     public function category()
@@ -22,4 +23,3 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 }
-
